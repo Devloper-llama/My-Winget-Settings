@@ -10,7 +10,7 @@
         "description": "Source repository settings",
         "type": "object",
         "properties": {
-          "autoUpdateIntervalInMinutes": 5
+          "autoUpdateIntervalInMinutes": 5,
             "description": "Number of minutes before source update",
             "type": "integer",
             "default": 5,
@@ -23,7 +23,7 @@
         "description": "Visual settings",
         "type": "object",
         "properties": {
-          "progressBar": "rainbow"
+          "progressBar": "rainbow",
             "description": "Progress bar display style",
             "type": "string",
             "enum": [
@@ -38,7 +38,7 @@
         "description": "Shared schema for preferences and requirements",
         "type": "object",
         "properties": {
-          "scope": "user"
+          "scope": "user",
             "description": "The scope of a package install",
             "type": "string",
             "enum": [
@@ -47,7 +47,7 @@
             ],
             "default": "user"
           },
-          "locale": [ "en-AU", "en-US" ]
+          "locale": [ "en-AU", "en-US" ],
             "description": "The locales of a package install",
             "type": "array",
             "items": {
@@ -57,6 +57,7 @@
             },
             "minItems": 1,
             "maxItems": 10
+          }
           },
           "architectures": ["x64"]
             "description": "The architecture(s) to use for a package install",
